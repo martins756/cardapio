@@ -1,0 +1,51 @@
+body { font-family: Arial, sans-serif;
+     background-color: #f9f9f9; 
+     margin: 0; 
+     padding: 0; 
+     text-align: center; } 
+     h2 { background-color: #ffcc00; 
+    padding: 20px;
+    margin: 0;
+    color: #750808; 
+    font-size: 2em; } form, p { margin: 20px auto; 
+        padding: 20px; 
+        background-color: #fff; 
+        border: 1px solid #ddd; 
+        border-radius: 8px; 
+        width: 80%; max-width: 800px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); } /* Estilo da Tabela */ 
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; } 
+        th, td { padding: 12px; 
+        text-align: left; 
+        
+        border-bottom: 1px solid #ddd; } 
+        th { background-color: #ffcc00; 
+        color: #333; font-size: 1.2em; } 
+        td { font-size: 1em; } td select { 
+        padding: 5px;
+         border: 1px solid #ccc; 
+         border-radius: 4px; } input[type="checkbox"]
+          { margin-right: 10px; } /* Estilo dos Botões e Área de Texto */ 
+          textarea { 
+            width: 100%; 
+            height: 100px;
+             padding: 10px; 
+             border: 1px solid #ccc;
+              border-radius: 4px; resize: vertical; } 
+              
+              input[type="submit"] { 
+                background-color:  #e65c00;
+                 color: white; 
+                 border: none; 
+                 padding: 10px 20px; 
+                 font-size: 1em;
+                  border-radius: 4px;
+                   cursor: pointer; } 
+                   input[type="submit"]:hover { 
+
+                    background-color: #ffcc00; } 
+                    @media (max-width: 600px) { 
+                        form { width: 95%; padding: 15px; } th, td { font-size: 0.9em; } h2 { font-size: 1.5em; } }  
+
+

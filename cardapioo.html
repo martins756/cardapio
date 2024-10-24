@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete da Ana</title>
+</head>
+<body>
+    
+    <h2> Cardápio - Lanchonete da Ana</h2>
+
+    <link rel="stylesheet" href="cardapio.css">
+
+    <form method="post" action="comprovante.php">
+
+        <img src="burger.jpg" alt="burger">
+        <table>
+            <tr>
+                <th>Lanches</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="opcao1" > X- Burguer </td>
+                <td>
+                    <select name="quantidade1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>R$ 15,00</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" name="opcao2" > Porção de Batata </td>
+                <td>
+                    <select name="quantidade2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>R$ 20,00</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" name="opcao3" > Burguer Mac </td>
+                <td>
+                    <select name="quantidade3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>R$ 16,50</td>
+            </tr>
+            <tr>
+                <th>Bebidas</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" name="opcao4" > Coca - Cola </td>
+                <td>
+                    <select name="quantidade4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>R$ 10,00</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" name="opcao5" > Sprite </td>
+                <td>
+                    <select name="quantidade5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>R$ 09,90</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="opcao6" > Fanta Uva </td>
+                <td>
+                    <select name="quantidade6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>R$ 10,50</td>
+            </tr>
+        </table>
+        <br>
+
+        <label><strong>Observações:</strong></label>
+        <textarea name="obs"></textarea>
+
+        <br><br>
+        <input type="submit" value="Enviar Pedido">
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+
+    </form>
+</body>
+</html>
